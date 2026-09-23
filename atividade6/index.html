@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h2>Catálogo da Loja</h2>
+        
+        <div class="filtros">
+            <label for="filtroCategoria">Categoria:</label>
+            <select id="filtroCategoria">
+                <option value="Todas">Todas as Categorias</option>
+                <option value="Periféricos">Periféricos</option>
+                <option value="Monitores">Monitores</option>
+                <option value="Móveis">Móveis</option>
+            </select>
+            
+            <button id="btnSemEstoque">Ver Produtos Sem Estoque</button>
+            <button id="btnVerTodos" class="btn-secundario">Limpar Filtros</button>
+        </div>
+
+        <div id="listaProdutos" class="grid-produtos">
+            <!-- Os cards dos produtos aparecerão aqui -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
