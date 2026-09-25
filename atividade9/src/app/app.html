@@ -1,0 +1,26 @@
+<div class="todo-container">
+  <h1>Lista de Tarefas</h1>
+
+  <div class="input-grupo">
+    <input 
+      type="text" 
+      [(ngModel)]="novaTarefaDescricao" 
+      placeholder="Digite uma nova tarefa..." 
+      (keyup.enter)="adicionarTarefa()"
+    />
+    <button (click)="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  @if (tarefas.length === 0) {
+    <p class="vazio">Nenhuma tarefa cadastrada ainda.</p>
+  }
+
+  <ul class="lista-tarefas">
+    @for (tarefa of tarefas; track $index) {
+      <li [class.concluida]="tarefa.concluida">
+        <span (click)="alternarTarefa($index)">{{ tarefa.descricao }}</span>
+        <button class="btn-remover" (click)="removerTarefa($index)">Excluir</button>
+      </li>
+    }
+  </ul>
+</div>

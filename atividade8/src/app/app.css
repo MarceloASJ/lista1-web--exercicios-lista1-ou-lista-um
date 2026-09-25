@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 40px;
+}
+
+.perfil-container {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho {
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.cabecalho h2 {
+  color: #007bff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.email {
+  color: #666666;
+}
+
+.secao {
+  margin-bottom: 20px;
+}
+
+.secao h3 {
+  color: #444444;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.lista-habilidades {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lista-habilidades li {
+  background-color: #e9ecef;
+  color: #333333;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}

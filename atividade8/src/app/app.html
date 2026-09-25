@@ -1,0 +1,21 @@
+<main class="perfil-container">
+  <header class="cabecalho">
+    <h1>{{ nome }}</h1>
+    <h2>{{ curso }}</h2>
+    <p class="email"><strong>E-mail:</strong> {{ email }}</p>
+  </header>
+
+  <section class="secao">
+    <h3>Sobre mim</h3>
+    <p>{{ descricao }}</p>
+  </section>
+
+  <section class="secao">
+    <h3>Habilidades</h3>
+    <ul class="lista-habilidades">
+      @for (habilidade of habilidades; track habilidade) {
+        <li>{{ habilidade }}</li>
+      }
+    </ul>
+  </section>
+</main>
